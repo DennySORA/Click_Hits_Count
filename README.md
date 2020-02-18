@@ -4,8 +4,8 @@
 <img src="https://img.shields.io/badge/Golang-1.13-brightgreen">
 <img src="https://img.shields.io/badge/Database-SQLite-brightgreen">
 <img src="https://img.shields.io/badge/license-Apache--2.0-blue">
-<img src="https://hits.dennysora.me/hits?name=ClickHitsCount&amp;chapter=0">
 </p>
+[![HitCount](https://hits.dennysora.me/hits?name=ClickHitsCount&chapter=0)](https://github.com/dennySORA/Click_Hits_Count)
 
 ## Demo
 
