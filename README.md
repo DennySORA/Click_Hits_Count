@@ -9,6 +9,10 @@
 
 ## Demo
 
+https://hits.dennysora.me/hits?name=ClickHitsCount&chapter=0
+
+**Github has cache so...this is not bug, Is feature.**
+
 https://hackmd.io/@dennySORA/ClickHitsCount
 
 ## Simple install
