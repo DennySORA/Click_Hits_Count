@@ -5,7 +5,9 @@
 <img src="https://img.shields.io/badge/Database-SQLite-brightgreen">
 <img src="https://img.shields.io/badge/license-Apache--2.0-blue">
 </p>
+<div align="center">
 [![HitCount](https://hits.dennysora.me/hits?name=ClickHitsCount&chapter=0)](https://github.com/dennySORA/Click_Hits_Count)
+</div>
 
 ## Demo
 
