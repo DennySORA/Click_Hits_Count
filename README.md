@@ -7,7 +7,7 @@
 <img src="https://hits.dennysora.me/hits?name=ClickHitsCount&amp;chapter=0">
 </p>
 
-## Damo
+## Demo
 
 https://hackmd.io/@dennySORA/ClickHitsCount
 
