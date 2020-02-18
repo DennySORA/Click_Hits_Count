@@ -4,7 +4,13 @@
 <img src="https://img.shields.io/badge/Golang-1.13-brightgreen">
 <img src="https://img.shields.io/badge/Database-SQLite-brightgreen">
 <img src="https://img.shields.io/badge/license-Apache--2.0-blue">
+<img src="https://hits.dennysora.me/hits?name=ClickHitsCount
+&amp;chapter=0" alt="" class="">
 </p>
+
+## Damo
+
+https://hackmd.io/@dennySORA/ClickHitsCount
 
 ## Simple install
 ### Git
