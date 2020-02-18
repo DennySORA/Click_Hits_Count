@@ -1,0 +1,13 @@
+{
+  "log": {
+    "level": 3,
+    "default_log": true,
+    "output": true,
+    "print": true,
+    "default_log": true
+  },
+  "port": {
+    "local": "127.0.0.1:8223",
+    "open": "0.0.0.0:8123"
+  }
+}

@@ -1,0 +1,27 @@
+CREATE TABLE IF NOT EXISTS IP(
+  uid INTEGER PRIMARY KEY AUTOINCREMENT,
+  IPAddress TEXT NOT NULL UNIQUE,
+  Novel_ID INTEGER NULL UNIQUE,
+  Counts INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Novel(
+  uid INTEGER PRIMARY KEY AUTOINCREMENT,
+  Novel TEXT NOT NULL UNIQUE
+);
+
+
+SELECT uid FROM Novel_Chapter WHERE 
+  Novel_ID = (SELECT uid as id FROM Novel WHERE Name = ?)
+AND
+  Chapter = ?
+
+SELECT uid FROM hits WHERE `Novel` = ?
+
+SELECT Counts FROM IP WHERE IPAddress = ? AND Novel_ID = ? 
+
+INSERT INTO IP(IPAddress,Novel_ID,Counts) VALUES ("127.0.0.1","557","1");
+
+UPDATE IP SET Counts=(SELECT Counts AS cou FROM IP WHERE IPAddress = "127.0.0.1")+1 WHERE IPAddress = "127.0.0.1";
+
+SELECT count(*) as hist FROM IP WHERE Novel_ID = ?;
