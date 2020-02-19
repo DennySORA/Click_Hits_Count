@@ -66,6 +66,34 @@ SP. **id**
 3. ep is any number(int).
 4. chapter is any number(int).
 
+#### Get hits data 
+
+##### Get all data
+```
+http://127.0.0.1:8223/get/all
+```
+1. This is get all data.
+
+
+##### Get all chapter hits data
+
+```
+http://127.0.0.1:8223/get/all/chapter/hits
+```
+1. This is get all chapter hits counts data.
+
+##### Get chapter detailed data 
+
+```
+http://127.0.0.1:8223/get/chapter/hits?name=Test&chapter=0
+```
+
+**If name or chapter not input parameters then return all chapter detailed data.**
+
+1. name is "**Novel Name**".
+2. chapter is "**Create chapter number(int)**".
+3. This is get ip hits and hits last time.
+
 ### From Open
 
 ```
