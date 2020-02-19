@@ -13,4 +13,7 @@ func router(engine *gin.Engine) {
 func routerLocal(engineLocal *gin.Engine) {
 	engineLocal.GET("/create/novel", app.CreateNovel)
 	engineLocal.GET("/create/chapter", app.CreateChapter)
+	engineLocal.GET("/get/all", app.GetAllData)
+	engineLocal.GET("/get/chapter/hits", app.GetChapterHits)
+	engineLocal.GET("/get/all/chapter/hits", app.GetAllChapterHits)
 }
