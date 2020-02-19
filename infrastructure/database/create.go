@@ -58,7 +58,7 @@ func createSQLite() (*sql.DB, error) {
 			Novel_ID INTEGER NOT NULL,
 			Episode INTEGER NOT NULL,
 			Chapter INTEGER NOT NULL,
-			Name TEXT NOT NULL UNIQUE
+			Name TEXT NOT NULL
 		  );
 
 		`,
