@@ -58,9 +58,9 @@ http://127.0.0.1:8223/create/novel?name=Test
 #### Create chapter
 
 ```
-http://127.0.0.1:8223/create/chapter?name=Testid=Test&ep=0&chapter=0
+http://127.0.0.1:8223/create/chapter?name=Test&id=Test&ep=0&chapter=0
 ```
-SP. **id** 
+SP. **id is create novel name** 
 1. name is any name.
 2. id name need exist in Novel.
 3. ep is any number(int).
