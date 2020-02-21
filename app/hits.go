@@ -15,21 +15,21 @@ func Hits(c *gin.Context) {
 		return
 	}
 	// Check novel is exist and get novel uid.
-	uid, err := GetChapterUID(name, chapter)
+	uid, err := GetChapterUIDFromDatabase(name, chapter)
 	if err != nil {
 		logs.Warning.Printf("&v error : %v", ip, err.Error())
 		c.String(404, "Bad Request.")
 		return
 	}
 	// Check access ip.
-	err = AddAccessIP(uid, ip)
+	err = AddIPAccess(uid, ip)
 	if err != nil {
 		logs.Warning.Printf("&v error : %v", ip, err.Error())
 		c.String(404, "Bad Request.")
 		return
 	}
 	// Get novel access count.
-	count, err := GetNovelHits(uid)
+	count, err := GetHitsFromDatabase(uid)
 	if err != nil {
 		logs.Warning.Printf("&v error : %v", ip, err.Error())
 		c.String(404, "Bad Request.")

@@ -4,8 +4,8 @@ import (
 	"ClickHitsCount/infrastructure/database"
 )
 
-func AddAccessIP(uid int, ip string) error {
-	_, err := database.HitsDatbase.Stmt["CreateCounts"].Exec(ip, uid)
+func AddIPAccess(uid int, ip string) error {
+	_, err := database.HitsDatbase.Stmt["AddIPAccessFromDatabase"].Exec(ip, uid)
 	if err != nil {
 		return err
 	}

@@ -8,7 +8,10 @@ import (
 
 func CreateNovel(c *gin.Context) {
 	name := c.Query("name")
-	_, err := database.HitsDatbase.Stmt["CreateNovel"].Exec(name)
+	if name == "" {
+		c.String(404, "Please input name.")
+	}
+	_, err := database.HitsDatbase.Stmt["CreateNovelFromDatabase"].Exec(name)
 	if err != nil {
 		c.String(404, err.Error())
 		return
@@ -21,12 +24,15 @@ func CreateChapter(c *gin.Context) {
 	ep := c.Query("ep")
 	chapter := c.Query("chapter")
 	name := c.Query("name")
-	uid, err := GetNovelUID(id)
+	if name == "" || id == "" || chapter == "" || ep == "" {
+		c.String(404, "Please input name.")
+	}
+	uid, err := GetNovelUIDFromDatabase(id)
 	if err != nil {
 		c.String(404, err.Error())
 		return
 	}
-	_, err = database.HitsDatbase.Stmt["CreateNovelChapter"].Exec(uid, ep, chapter, name)
+	_, err = database.HitsDatbase.Stmt["CreateChapterFromDatabase"].Exec(uid, ep, chapter, name)
 	if err != nil {
 		c.String(404, err.Error())
 		return
