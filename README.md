@@ -68,31 +68,71 @@ SP. **id**
 
 #### Get hits data 
 
-##### Get all data
-```
-http://127.0.0.1:8223/get/all
-```
-1. This is get all data.
-
-
-##### Get all chapter hits data
+##### Get all hits ip
 
 ```
-http://127.0.0.1:8223/get/all/chapter/hits
+http://127.0.0.1:8223/get/all/hits/ip
 ```
-1. This is get all chapter hits counts data.
+1. This is get all hits ip and data.
 
-##### Get chapter detailed data 
+##### Get chapter hits data 
 
 ```
-http://127.0.0.1:8223/get/chapter/hits?name=Test&chapter=0
+http://127.0.0.1:8223/get/chapter/hits?chapter_id=&novel_name=&chapter_name=&ip&ep=&chapter=
 ```
 
 **If name or chapter not input parameters then return all chapter detailed data.**
 
-1. name is "**Novel Name**".
-2. chapter is "**Create chapter number(int)**".
-3. This is get ip hits and hits last time.
+This is get chapter hits counts.
+
+**All parameter is can choose.**
+1. chapter_id is "**Chapter ID(int)**".
+2. novel_name is "**Novel Name(string)**".
+3. chapter_name is "**Chapter Name(string)**".
+4. ip is "**IP(string)**".
+5. ep is "**EP(int)**".
+6. chapter is "**Create chapter number(int)**".
+
+
+##### Get chapter hit ip detailed data 
+
+```
+http://127.0.0.1:8223/get/chapter/hits?chapter_id=&novel_name=&chapter_name=&ip&ep=&chapter=
+```
+
+This is get chapter ip hits.
+
+**All parameter is can choose.**
+1. chapter_id is "**Chapter ID(int)**".
+2. novel_name is "**Novel Name(string)**".
+3. chapter_name is "**Chapter Name(string)**".
+4. ip is "**IP(string)**".
+5. ep is "**EP(int)**".
+6. chapter is "**Create chapter number(int)**".
+
+##### Get novel hit count
+
+```
+http://127.0.0.1:8223/get/novel/hits?novel_name=
+```
+
+This is get novel hits counts.
+
+**All parameter is can choose.**
+1. novel_name is "**Novel name(string)**".
+
+##### Get episode hit count
+
+```
+http://127.0.0.1:8223/get/ep/hits?novel_name=
+```
+
+This is get episode hits counts.
+
+**All parameter is can choose.**
+1. novel_name is "**Novel name(string)**".
+
+---
 
 ### From Open
 
