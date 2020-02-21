@@ -46,16 +46,16 @@ Example:
 
 ## Simple to use
 
-### From Local
+## From Local
 
-#### Create Novel
+### Create Novel
 
 ```
 http://127.0.0.1:8223/create/novel?name=Test
 ```
 1. name is any name.
 
-#### Create chapter
+### Create Chapter
 
 ```
 http://127.0.0.1:8223/create/chapter?name=Test&id=Test&ep=0&chapter=0
@@ -66,16 +66,14 @@ SP. **id is create novel name**
 3. ep is any number(int).
 4. chapter is any number(int).
 
-#### Get hits data 
-
-##### Get all hits ip
+### Get all hits ip
 
 ```
 http://127.0.0.1:8223/get/all/hits/ip
 ```
 1. This is get all hits ip and data.
 
-##### Get chapter hits data 
+## Get chapter hits data 
 
 ```
 http://127.0.0.1:8223/get/chapter/hits?chapter_id=&novel_name=&chapter_name=&ip&ep=&chapter=
@@ -94,7 +92,7 @@ This is get chapter hits counts.
 6. chapter is "**Create chapter number(int)**".
 
 
-##### Get chapter hit ip detailed data 
+## Get chapter hit ip detailed data 
 
 ```
 http://127.0.0.1:8223/get/chapter/hits?chapter_id=&novel_name=&chapter_name=&ip&ep=&chapter=
@@ -110,7 +108,7 @@ This is get chapter ip hits.
 5. ep is "**EP(int)**".
 6. chapter is "**Create chapter number(int)**".
 
-##### Get novel hit count
+### Get novel hit count
 
 ```
 http://127.0.0.1:8223/get/novel/hits?novel_name=
@@ -121,7 +119,7 @@ This is get novel hits counts.
 **All parameter is can choose.**
 1. novel_name is "**Novel name(string)**".
 
-##### Get episode hit count
+## Get episode hit count
 
 ```
 http://127.0.0.1:8223/get/ep/hits?novel_name=
@@ -134,7 +132,7 @@ This is get episode hits counts.
 
 ---
 
-### From Open
+## From Open
 
 ```
 https://127.0.0.1:8123/hits?name=Test&chapter=0
